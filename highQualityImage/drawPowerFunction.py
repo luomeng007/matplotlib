@@ -20,9 +20,10 @@ f3 = plt.np.power(2, x)
 
 plt.plot(x, f1, 'r', x, f2, 'b', x, f3, 'g', linewidth=2)
 plt.axis([-4, 4, -0.5, 8])
-plt.text(1, 7.5, r'$10^x$', size=16)
-plt.text(2.2, 7.5, r'$e^x$', size=16)
-plt.text(3.2, 7.5, r'$2^x$', size=16)
-plt.title('A simple example', size=16)
+# both fontsize and size could be used, better use size
+plt.text(1, 7.5, r'$10^x$', fontsize=16)
+plt.text(2.2, 7.5, r'$e^x$', fontsize=16)
+plt.text(3.2, 7.5, r'$2^x$', fontsize=16)
+plt.title('A simple example', fontsize=16)
 
 plt.show()
